@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Travel Landing Page</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">Travel</h2>
+            <div class="toggle"></div>
+        </header>
+
+        <video src="explore.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Nerver stop</h2>
+            <h3>Exploring the world</h3>
+            <p>“WE WERE BORN TO BE FREE, 
+                TO EXPAND OUR HORIZONS BY GOING WHERE WE HAVE NEVER GONE BEFORE, 
+                AND NOT TO HANG OUT IN THE RELATIVE COMFORT AND SAFETY OF THE NEST, 
+                THE KNOWN. THERE IS A PLACE WITHIN US THAT IS COURAGEOUS BEYOND OUR HUMAN UNDERSTANDING;
+                 IT YEARNS TO EXPLORE BEYOND THE BOUNDARIES OF OUR DAILY LIFE.” 
+            </p>
+            <a href="#">Explore</a>
+        </div>        
+
+                <ul class="social">
+                    <li><a href="https://www.facebook.com/"><img src="facebook.png"></a></li>
+                    <li><a href="https://www.instagram.com/?hl=en"><img src="instagram.png"></a></li>
+                    <li><a href="https://twitter.com/"><img src="twitter.png"></a></li>            
+                </ul> 
+        
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase');
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      })
+
+    </script>
+
+</body>
+</html>
